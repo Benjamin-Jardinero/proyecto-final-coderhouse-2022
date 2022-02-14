@@ -532,15 +532,15 @@ aside{
     .section__clientes--card{
         display: inline-block;
     }
-    .section__clientes--card div{
-        width: 100%;
+    .section__clientes--card .card{
+        width: 80%;
     }
 }
 @media (min-width:576px) and (max-width:768px){
     .section__clientes--card{
         display: block;
     }
-    .section__clientes--card {
+    .section__clientes--card .card{
         width: 80%;
     }
 }
