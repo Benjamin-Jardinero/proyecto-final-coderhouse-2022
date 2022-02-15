@@ -15,7 +15,7 @@ body{
 
 .logo{
     width: 150px;
-    height: 78px;
+    height: 80px;
     border-radius: 20%;
 }
 
@@ -473,9 +473,10 @@ aside{
   .aside__sobrenosotros {
     display: flex;
     color: white;
-    margin: 35px 0;
   }
-  
+  .aside__sobrenosotros div{
+    width: 100%;
+  }
   .aside__sobrenosotros h3 {
     color: #aeffae;
     margin: 15px;
