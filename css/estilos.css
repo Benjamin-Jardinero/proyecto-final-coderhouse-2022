@@ -141,7 +141,6 @@ aside{
 .footer__div{
     display: flex;
     width: 100%;
-    background-color: rgb(45, 102, 36);
     color: rgb(233, 255, 233);
 }
 .footer__div--enlaces{
@@ -183,7 +182,7 @@ aside{
     transition: 0.5s;
 }
 .icon-ws{
-    color: rgb(255, 255, 255);
+    color: rgb(56, 185, 56);
 }
 .icon-fb{
     color: rgb(62, 62, 170);
@@ -333,7 +332,7 @@ aside{
     overflow-wrap: break-word;
 }
 
-@media(max-width:379px){
+@media(max-width:480px){
     .section__div--img{
         display: none;
     }
@@ -345,7 +344,7 @@ aside{
         grid-template-rows: 1fr 1fr;
     }
 }
-@media(min-width:380px) and (max-width:768px){
+@media(min-width:481px) and (max-width:768px){
     #grilla{
         display: grid;
         grid-template-areas: 
@@ -473,6 +472,7 @@ aside{
   .aside__sobrenosotros {
     display: flex;
     color: white;
+    margin: 15px auto;
   }
   .aside__sobrenosotros div{
     width: 100%;
@@ -507,4 +507,5 @@ aside{
       height: 100%;
       background-color: #202020;
     }
+    
   }
