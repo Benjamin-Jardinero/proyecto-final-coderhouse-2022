@@ -156,6 +156,7 @@ aside{
 .footer__div--enlaces a{
     text-decoration: none;
     color: white;
+    font-size: 15px;
 }
 .footer__div--enlaces a:hover{
     color: rgb(146, 255, 164);
@@ -197,11 +198,15 @@ aside{
     width: 33.3%;
     text-align: center;
 }
-.footer__condiciones--img{
-    margin: 5px 0;
-    width: 70%;
-    height: 19vh;
+.footer__div--condiciones div{
+    display: flex;
+    justify-content: center;
 }
+.footer__div--condiciones img{
+    width: 50px;
+    margin: 5px;
+}
+
 @media(max-width:379px){
     .footer__div--redes h3{
         font-size: 1rem;
@@ -263,7 +268,7 @@ aside{
         font-size: 40px;
     }
     .footer__div--enlaces a{
-        font-size: 31px;
+        font-size: 20px;
     }
 }
 /*///////////////////////CONTACTO - GRID\\\\\\\\\\\\\\\\\\\\\\\\\*/
