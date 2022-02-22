@@ -14,7 +14,7 @@ body{
 /*header / menu / nav /index*/
 
 .logo{
-    width: 150px;
+    width: 130px;
     height: 80px;
     border-radius: 20%;
 }
@@ -249,12 +249,10 @@ aside{
     "img form contacto"
     "img form contacto"
     "img form contacto";
-    grid-template-columns: 25% 45% 30%;
+    grid-template-columns: 20% 50% 30%;
     grid-template-rows: 1fr 1fr 1fr;
 }
-.border{
-    border: 2px black solid;
-}
+
 .section__div--img{
     grid-area: img;
 }
@@ -266,20 +264,7 @@ aside{
     grid-area: form;
 }
 .section__div--form div{
-    margin: 20px 0;
-}
-.section__div--form input{
-    margin-left: 2px;
-    width: 98%;
-    height: 8vh;
-    font-size: 28px;
-}
-.section__div--form input::placeholder{
-    font-size: 30px;
-    color: rgb(73, 24, 24);
-}
-#mensaje{
-    height: 18vh;
+    margin: 50px 30px;
 }
 .section__form--button{
     display: flex;
@@ -287,7 +272,7 @@ aside{
 .section__form--button button{
     background-color: black;
     color: white;
-    width: 49%;
+    width: 50%;
     height: 10vh;
     margin: 0 2px;
 }
@@ -326,7 +311,7 @@ aside{
         "img form"
         "img form"
         "contacto contacto";
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 1fr 1fr;
     }
 
@@ -415,7 +400,24 @@ aside{
 }
 .section__clientes--card img{
     width: 100%;
-    height: 50vh;
+    height: 38vh;
+}
+.section__clientes2{
+    margin: 20px auto;
+}
+.section__clientes2 h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    font-size: 2.5rem;
+}
+.section__clientes2 div{
+    display: flex;
+    width: 100%;
+}
+.section__clientes2 img{
+    width: 33.3%;
+    margin: 10px auto;
 }
 @media(max-width:575px){
     .section__clientes--card{
@@ -423,6 +425,12 @@ aside{
     }
     .section__clientes--card .card{
         margin: auto;
+        width: 100%;
+    }
+    .section__clientes2 div{
+        display: inline-block;
+    }
+    .section__clientes2 img{
         width: 100%;
     }
 }
@@ -438,10 +446,10 @@ aside{
 /*///////////////////////SOBRE NOSOTROS \\\\\\\\\\\\\\\\\\\\\\\\\*/
 .sobre__nosotros {
     color: black;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: center;
-    margin: 20px;
+    margin: 20px auto;
   }
   
   .aside__sobrenosotros {
@@ -469,18 +477,14 @@ aside{
   .aside__sobrenosotros p{
       margin: 10px 35px;
   }
-  @media (max-width: 780px) {
-    .aside__sobrenosotros {
-      display: inline-block;
-    }
-    .aside__sobrenosotros .maps {
-      width: 100%;
-      height: 60vh;
-    }
-    .aside__sobrenosotros .contacto, .aside__sobrenosotros div {
-      width: 100%;
-      height: 100%;
-      background-color: #202020;
-    }
-    
+  @media(max-width:480px){
+   .sobre__nosotros{
+       display: inline-block;
+   }
+   .aside__sobrenosotros{
+       display: inline-block;
+   }
+   .aside__sobrenosotros .maps {
+    height: 100vh;
   }
+}

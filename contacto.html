@@ -63,27 +63,28 @@
             </div>
             <div class="section__div--form border">
                 <form action="" method="post">
-                    <div>
-                        <label for="name">NOMBRE</label>
-                        <input type="text" id="name" placeholder="name">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                      <label for="floatingInput">Nombre</label>
                     </div>
-                    <div>
-                        <label for="correo">CORREO ELECTRONICO</label>
-                        <input type="email" id="correo" placeholder="email">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="Correo Electronico">
+                      <label for="floatingInput">Correo Electronico</label>
                     </div>
-                    <div>
-                        <label for="celular">TELEFONO</label>
-                        <input type="number" id="celular" placeholder="phone">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="Celular">
+                      <label for="floatingInput">Celular</label>
                     </div>
-                    <div>
-                        <label for="mensaje">MENSAJE</label>
-                        <input type="text" id="mensaje" maxlength="100">
+
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Comentario</label>
                     </div>
                     <div class="section__form--button">
-                        <button type="submit" >Enviar</button>
-                        <button type="reset">Limpiar Formulario</button>
-                    </div>
-                    
+                      <button type="submit" >Enviar</button>
+                      <button type="reset">Limpiar Formulario</button>
+                  </div>
+
                </form>
             </div>
             <div class="section__div--contacto border">
