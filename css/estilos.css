@@ -136,6 +136,16 @@ aside{
     height: 70vh;
     margin: 20px 0;
 }
+@media(max-width:379px){
+    .articulo__div img{
+        width: 100%;
+    }
+}
+@media (min-width:380px) and (max-width:768px){
+    .articulo__div img{
+        width: 80%;
+    }
+}
 /*footer / index / redes sociales*/
 
 .footer__div{
@@ -148,15 +158,16 @@ aside{
 }
 .footer__div--enlaces h3, .footer__div--redes h3, .footer__div--condiciones h3{
     text-align: center;
+    font-size: 1.2rem;
 }
 .footer__div--enlaces ul{
     list-style: none;
-    margin: 0 10px;
+
 }
 .footer__div--enlaces a{
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
 }
 .footer__div--enlaces a:hover{
     color: rgb(146, 255, 164);
@@ -168,14 +179,14 @@ aside{
 }
 .footer__div--redes ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     
 }
 .footer__div--redes i{
     font-size: 30px;
-    margin: 10px ;
-    padding: 15px 0;
+    margin: 30px auto;
+
 }
 .footer__div--redes i:hover{
     color: rgba(255, 255, 255, 0.993);
@@ -208,29 +219,18 @@ aside{
 }
 
 @media(max-width:379px){
-    .footer__div--redes h3{
-        font-size: 1rem;
-    }
-    .footer__div--redes i{
-        font-size: 25px;
-    }
-    .footer__div--enlaces{
-        display: none;
-    }
     .footer__div--redes{
         width: 100%;
     }
+    .footer__div--enlaces{
+        display: none;
+    }
     .footer__div--condiciones{
         display: none;
     }
+    
 }
 @media (min-width:380px) and (max-width:768px){
-    .footer__div h3{
-        font-size: 1rem;
-    }
-    .footer__div--redes i{
-        font-size: 25px;
-    }
     .footer__div--condiciones{
         display: none;
     }
@@ -239,36 +239,6 @@ aside{
     }
     .footer__div--enlaces{
         width: 50%;
-    }
-}
-@media (min-width:769px) and (max-width:1023){
-    .footer__div h3{
-        font-size: 1.5rem;
-    }
-    .footer__div--redes i{
-        font-size: 26px;
-    }
-    .footer__div--enlaces a{
-        font-size: 30px;
-    }
-}
-@media (min-width:1024px) and (max-width:1200px){ 
-    .footer__div h3{
-        font-size: 2rem;
-    }
-    .footer__div--redes i{
-        font-size: 30px;
-    }
-}
-@media (min-width:1201px) and (max-width:2000px){ 
-    .footer__div h3{
-        font-size: 2.2rem;
-    }
-    .footer__div--redes i{
-        font-size: 40px;
-    }
-    .footer__div--enlaces a{
-        font-size: 20px;
     }
 }
 /*///////////////////////CONTACTO - GRID\\\\\\\\\\\\\\\\\\\\\\\\\*/
