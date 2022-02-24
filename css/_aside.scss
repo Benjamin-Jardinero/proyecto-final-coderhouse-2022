@@ -1,0 +1,130 @@
+/* ASIDE / SERVICIOS / MEDIA QUERY / INDEX */
+
+aside{
+    background-color: rgb(207, 252, 207);
+}
+.aside__div{
+    display:flex;
+    margin: 20px;
+}
+.aside__div--img{
+    width: 50%;
+}
+.aside__div--img img{
+    width: 100%;
+}
+
+.aside__div--servicios{
+    width: 50%;
+    padding: 0 10px;
+    background-color: rgba(0, 255, 0, 0.137);
+    color: rgb(0, 0, 0);
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.aside__div--servicios ul{
+    list-style: none;
+}
+.aside__div--servicios h3{
+    font-size: 27px;
+    text-align: center;
+    padding: 20px 0;
+}
+.aside__div--servicios li{
+    margin: 0 5px;
+    padding: 5px 0;
+    font-size: 22px;
+    
+}
+.aside__div--servicios li:hover{
+    font-style: italic;
+}
+@media (min-width:0px) and (max-width:768px){
+    aside{
+        width: 100%;
+    }
+    .aside__div{
+        display: inline-block;
+    }
+    .aside__div--img, .aside__div--servicios{
+        width: 100%;
+    }
+}
+@media (min-width:769px) and (max-width:1023px){
+    .aside__div--servicios h3{
+        font-size: 20px;
+    }
+    .aside__div--servicios li{
+       font-size: 1rem; 
+    }
+}
+@media (min-width:1024px) and (max-width:1200px){
+    .aside__div--servicios h3{
+        font-size: 23px;
+    }
+    .aside__div--servicios li{
+       font-size: 1.5rem; 
+    }
+}
+@media (min-width:1201px) and (max-width:1400px){
+    .aside__div--servicios h3{
+        font-size: 28px;
+    }
+    .aside__div--servicios li{
+       font-size: 2.2rem; 
+    }
+}
+@media (min-width:1401px){
+    .aside__div--servicios h3{
+        font-size: 32px;
+    }
+    .aside__div--servicios li{
+       font-size: 2.7rem; 
+    }
+}
+
+/*///////////////////////SOBRE NOSOTROS / FLEXBOX \\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.sobre__nosotros {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .aside__sobrenosotros {
+    display: flex;
+    color: white;
+    margin: 15px auto;
+  }
+  .aside__sobrenosotros div{
+    width: 100%;
+  }
+  .aside__sobrenosotros h3 {
+    color: #aeffae;
+    margin: 15px;
+  }
+  
+  .aside__sobrenosotros .maps {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .aside__sobrenosotros .contacto, .aside__sobrenosotros div {
+    width: 100%;
+    background-color: #202020;
+  }
+  .aside__sobrenosotros p{
+      margin: 10px 35px;
+  }
+  @media(max-width:480px){
+   .sobre__nosotros{
+       display: inline-block;
+   }
+   .aside__sobrenosotros{
+       display: inline-block;
+   }
+   .aside__sobrenosotros .maps {
+    height: 100vh;
+  }
+}

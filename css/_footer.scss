@@ -1,0 +1,95 @@
+/* FOOTER / INDEX / REDES SOCIALES */
+
+.footer__div{
+    display: flex;
+    width: 100%;
+    color: rgb(233, 255, 233);
+}
+.footer__div--enlaces{
+    width: 33.3%;
+}
+.footer__div--enlaces h3, .footer__div--redes h3, .footer__div--condiciones h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.footer__div--enlaces ul{
+    list-style: none;
+
+}
+.footer__div--enlaces a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.footer__div--enlaces a:hover{
+    color: rgb(146, 255, 164);
+    transition-duration: 0.3s;
+}
+
+.footer__div--redes{
+    width: 33.3%;
+}
+.footer__div--redes ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.footer__div--redes i{
+    font-size: 30px;
+    margin: 30px auto;
+
+}
+.footer__div--redes i:hover{
+    color: rgba(255, 255, 255, 0.993);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.icon-ws{
+    color: rgb(56, 185, 56);
+}
+.icon-fb{
+    color: rgb(62, 62, 170);
+}
+.icon-tw{
+    color: cornflowerblue;
+}
+.icon-ins{
+    color: rosybrown;
+}
+.footer__div--condiciones{
+    width: 33.3%;
+    text-align: center;
+}
+.footer__div--condiciones div{
+    display: flex;
+    justify-content: center;
+}
+.footer__div--condiciones img{
+    width: 50px;
+    margin: 5px;
+}
+
+@media(max-width:379px){
+    .footer__div--redes{
+        width: 100%;
+    }
+    .footer__div--enlaces{
+        display: none;
+    }
+    .footer__div--condiciones{
+        display: none;
+    }
+    
+}
+@media (min-width:380px) and (max-width:768px){
+    .footer__div--condiciones{
+        display: none;
+    }
+    .footer__div--redes{
+        width: 50%;
+    }
+    .footer__div--enlaces{
+        width: 50%;
+    }
+}

@@ -1,0 +1,205 @@
+/*///////////////////////CONTACTO - GRID\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "img form contacto"
+    "img form contacto"
+    "img form contacto";
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.section__div--img{
+    grid-area: img;
+}
+.section__div--img img{
+    width: 100%;
+    height: 100vh;
+}
+.section__div--form{
+    grid-area: form;
+}
+.section__div--form div{
+    margin: 50px 30px;
+}
+.section__form--button{
+    display: flex;
+}
+.section__form--button button{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 10vh;
+    margin: 0 2px;
+}
+.section__form--button button:hover{
+    background-color: green;
+    transition: 0.3s;
+}
+.section__div--contacto{
+    grid-area: contacto;
+}
+.section__div--contacto ul{
+    list-style: none;
+}
+.section__div--contacto li{
+    font-size: 16px;
+    margin: 50px 0;
+    overflow-wrap: break-word;
+}
+
+@media(max-width:480px){
+    .section__div--img{
+        display: none;
+    }
+    #grilla{
+        grid-template-areas: 
+        "form"
+        "contacto";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media(min-width:481px) and (max-width:768px){
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "img form"
+        "img form"
+        "contacto contacto";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/*///////////////////////TIENDA - GRID\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+#grilla__tienda{
+    display: grid;
+    padding: 30px;
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.grilla__tienda--img img{
+    width: 100%;
+    height: 50vh;
+}
+.grilla__tienda--img:hover{
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    border: green solid 2px;
+}
+.grilla__tienda--img:active{
+    background-color: rgb(212, 255, 212);
+}
+@media(max-width:379px){
+    #grilla__tienda{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "img11"
+        "img12";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media(min-width:380px) and (max-width:479px){
+    #grilla__tienda{
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding:20px;
+    }
+}
+@media (min-width:480px) and (max-width:768px){
+    #grilla__tienda{
+        grid-template-areas: 
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img9"
+        "img10 img11 img12";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*///////////////////////CLIENTES - BOOTSTRAP\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.clientes-carrousel{
+    margin: 50px auto;
+}
+.main__button--carousel{
+    background-color: green;
+}
+.section__clientes--card{
+    display: flex;
+}
+.section__clientes--card .card{
+    width: 100%;
+    margin: 20px;
+}
+.section__clientes--card img{
+    width: 100%;
+    height: 38vh;
+}
+.section__clientes2{
+    margin: 20px auto;
+}
+.section__clientes2 h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    font-size: 2.5rem;
+}
+.section__clientes2 div{
+    display: flex;
+    width: 100%;
+}
+.section__clientes2 img{
+    width: 33.3%;
+    margin: 10px auto;
+}
+@media(max-width:575px){
+    .section__clientes--card{
+        display: inline-block;
+    }
+    .section__clientes--card .card{
+        margin: auto;
+        width: 100%;
+    }
+    .section__clientes2 div{
+        display: inline-block;
+    }
+    .section__clientes2 img{
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .section__clientes--card{
+        display: block;
+    }
+    .section__clientes--card .card{
+        width: 100%;
+        margin: auto;
+    }
+}
