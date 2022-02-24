@@ -12,16 +12,16 @@
 
 .section__div--img{
     grid-area: img;
-}
-.section__div--img img{
-    width: 100%;
-    height: 100vh;
+    img{
+        width: 100%;
+        height: 100vh;
+    }
 }
 .section__div--form{
     grid-area: form;
-}
-.section__div--form div{
-    margin: 50px 30px;
+    div{
+        margin: 50px 30px;
+    }
 }
 .section__form--button{
     display: flex;

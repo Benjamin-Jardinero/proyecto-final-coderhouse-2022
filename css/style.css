@@ -22,9 +22,7 @@ body {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "img form contacto"
- "img form contacto"
- "img form contacto";
+      grid-template-areas: "img form contacto" "img form contacto" "img form contacto";
   -ms-grid-columns: 20% 50% 30%;
       grid-template-columns: 20% 50% 30%;
   -ms-grid-rows: 1fr 1fr 1fr;
@@ -96,8 +94,7 @@ body {
     display: none;
   }
   #grilla {
-        grid-template-areas: "form"
- "contacto";
+        grid-template-areas: "form" "contacto";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
@@ -109,9 +106,7 @@ body {
   #grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "img form"
- "img form"
- "contacto contacto";
+        grid-template-areas: "img form" "img form" "contacto contacto";
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
     -ms-grid-rows: 1fr 1fr;
@@ -124,9 +119,7 @@ body {
   display: -ms-grid;
   display: grid;
   padding: 30px;
-      grid-template-areas: "img1 img2 img3 img4"
- "img5 img6 img7 img8"
- "img9 img10 img11 img12";
+      grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12";
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
@@ -153,18 +146,7 @@ body {
 
 @media (max-width: 379px) {
   #grilla__tienda {
-        grid-template-areas: "img1"
- "img2"
- "img3"
- "img4"
- "img5"
- "img6"
- "img7"
- "img8"
- "img9"
- "img10"
- "img11"
- "img12";
+        grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -174,12 +156,7 @@ body {
 
 @media (min-width: 380px) and (max-width: 479px) {
   #grilla__tienda {
-        grid-template-areas: "img1 img2"
- "img3 img4"
- "img5 img6"
- "img7 img8"
- "img9 img10"
- "img11 img12";
+        grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12";
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -190,10 +167,7 @@ body {
 
 @media (min-width: 480px) and (max-width: 768px) {
   #grilla__tienda {
-        grid-template-areas: "img1 img2 img3"
- "img4 img5 img6"
- "img7 img8 img9"
- "img10 img11 img12";
+        grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "img10 img11 img12";
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
